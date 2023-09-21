@@ -10,9 +10,10 @@ Pod::Spec.new do |s|
   s.homepage         = "https://tamara.co"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "sdk" => "thanhphong190@gmail.com" }
-  s.source           = { :git => "https://github.com/thanhphong190/TEST-SDK.git", :tag => s.version}
+  s.source           = { :git => "https://github.com/thanhphong190/TEST-SDK.git", :tag => s.version.to_s}
   s.source_files = "TESTSDK/**/*"
   s.dependency 'Moya'
   s.platform = :ios, "11.0"
   s.swift_version = "5.0"
+  s.cocoapods_version = '>= 1.4.0'
 end
